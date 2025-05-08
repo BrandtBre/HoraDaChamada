@@ -28,9 +28,9 @@ public class Player_Movement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Car1")
+        if (collision.gameObject.tag == "Cars")
         {
-            
+            Time.timeScale = 0;
         }
     }
 }
